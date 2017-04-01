@@ -2,7 +2,7 @@
 
 namespace DatabaseDataGenerator.Forms
 {
-    public partial class MainForm : Form
+    public partial class MainForm : DevExpress.XtraBars.Ribbon.RibbonForm
     {
         public MainForm()
         {

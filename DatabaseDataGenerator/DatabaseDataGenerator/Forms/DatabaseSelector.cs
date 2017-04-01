@@ -10,7 +10,7 @@ using System.Windows.Forms;
 
 namespace DatabaseDataGenerator.Forms
 {
-    public partial class DatabaseSelector : Form
+    public partial class DatabaseSelector : DevExpress.XtraBars.Ribbon.RibbonForm
     {
         public DatabaseSelector()
         {
