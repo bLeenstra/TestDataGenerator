@@ -99,6 +99,7 @@
             this.barButtonItemLoad.ImageOptions.Image = global::DatabaseDataGenerator.Properties.Resources.open_16x16;
             this.barButtonItemLoad.ImageOptions.LargeImage = global::DatabaseDataGenerator.Properties.Resources.open_32x32;
             this.barButtonItemLoad.Name = "barButtonItemLoad";
+            this.barButtonItemLoad.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButtonItemLoad_ItemClick);
             // 
             // ribbonPage1
             // 

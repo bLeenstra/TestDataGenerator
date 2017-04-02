@@ -52,6 +52,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Classes\Database.cs" />
     <Compile Include="Classes\MySqlDatabase.cs" />
     <Compile Include="Forms\DatabaseSelector.cs">
       <SubType>Form</SubType>
@@ -59,19 +60,28 @@
     <Compile Include="Forms\DatabaseSelector.Designer.cs">
       <DependentUpon>DatabaseSelector.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\MainForm.cs">
+    <Compile Include="Forms\MySqlDataCreationForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\MainForm.Designer.cs">
-      <DependentUpon>MainForm.cs</DependentUpon>
+    <Compile Include="Forms\MySqlDataCreationForm.Designer.cs">
+      <DependentUpon>MySqlDataCreationForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\SchemaSelector.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\SchemaSelector.Designer.cs">
+      <DependentUpon>SchemaSelector.cs</DependentUpon>
     </Compile>
     <Compile Include="Startup.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Forms\DatabaseSelector.resx">
       <DependentUpon>DatabaseSelector.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\MainForm.resx">
-      <DependentUpon>MainForm.cs</DependentUpon>
+    <EmbeddedResource Include="Forms\MySqlDataCreationForm.resx">
+      <DependentUpon>MySqlDataCreationForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SchemaSelector.resx">
+      <DependentUpon>SchemaSelector.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\licenses.licx" />
     <EmbeddedResource Include="Properties\Resources.resx">

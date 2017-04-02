@@ -8,6 +8,9 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using DatabaseDataGenerator.Classes;
+using DevExpress.Data.Helpers;
+using DevExpress.XtraEditors;
+using MySql.Data.MySqlClient;
 
 namespace DatabaseDataGenerator.Forms
 {
@@ -18,8 +21,9 @@ namespace DatabaseDataGenerator.Forms
             InitializeComponent();
         }
 
-        private bool ValidateSettings()
+        private void ValidateSettings()
         {
+            List<string> availableSchema = new List<string>();
             string address = textEditAddress.Text;
             ushort port = Convert.ToUInt16(calcEditPort.EditValue);
 
@@ -29,13 +33,34 @@ namespace DatabaseDataGenerator.Forms
             switch (comboBoxEditType.SelectedIndex)
             {
                 case 1:
-                    return MySqlDatabase.TestConnection(address, port, username, password);
-                default:
-                    return false;
+                    if (!MySqlDatabase.TestConnection(address, port, username, password)) break;
+                    MySqlDatabase database = new MySqlDatabase()
+                    {
+                        ConnString = new MySqlConnectionStringBuilder()
+                        {
+                            Server = address,
+                            Port = port,
+                            UserID = username,
+                            Password = password
+                        }
+                    };
+                    using (MySqlDataCreationForm generateData = new MySqlDataCreationForm(database))
+                    {
+                        generateData.Show(this);
+                    }
+
+                    return;
             }
+            XtraMessageBox.Show("There was an issue with the entered database credentials");
+
         }
 
         private void barButtonItemNew_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            CleanValues();
+        }
+
+        private void CleanValues()
         {
             comboBoxEditType.SelectedIndex = 0;
             textEditAddress.Text = "";
@@ -46,10 +71,12 @@ namespace DatabaseDataGenerator.Forms
 
         private void barButtonItemSave_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
-            if (ValidateSettings())
-            {
-                
-            }
+            ValidateSettings();
+        }
+
+        private void barButtonItemLoad_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+
         }
     }
 }
