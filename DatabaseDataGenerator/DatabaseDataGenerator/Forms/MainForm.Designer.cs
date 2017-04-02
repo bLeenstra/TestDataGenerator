@@ -47,7 +47,8 @@
             this.ribbonControl1.Name = "ribbonControl1";
             this.ribbonControl1.Pages.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPage[] {
             this.ribbonPage1});
-            this.ribbonControl1.Size = new System.Drawing.Size(686, 143);
+            this.ribbonControl1.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonControlStyle.OfficeUniversal;
+            this.ribbonControl1.Size = new System.Drawing.Size(686, 79);
             this.ribbonControl1.StatusBar = this.ribbonStatusBar1;
             // 
             // ribbonPage1
@@ -56,7 +57,7 @@
             this.ribbonPageGroup1,
             this.ribbonPageGroup2});
             this.ribbonPage1.Name = "ribbonPage1";
-            this.ribbonPage1.Text = "ribbonPage1";
+            this.ribbonPage1.Text = "Actions";
             // 
             // ribbonPageGroup1
             // 
@@ -90,7 +91,7 @@
             this.Name = "MainForm";
             this.Ribbon = this.ribbonControl1;
             this.StatusBar = this.ribbonStatusBar1;
-            this.Text = "Form1";
+            this.Text = "Main Screen";
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControl1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
