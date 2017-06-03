@@ -118,6 +118,7 @@
             this.comboBoxEditSchema.Name = "comboBoxEditSchema";
             this.comboBoxEditSchema.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.comboBoxEditSchema.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.DisableTextEditor;
             this.comboBoxEditSchema.Size = new System.Drawing.Size(264, 20);
             this.comboBoxEditSchema.TabIndex = 6;
             // 

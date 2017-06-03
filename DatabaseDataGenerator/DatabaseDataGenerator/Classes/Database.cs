@@ -11,7 +11,7 @@ namespace DatabaseDataGenerator.Classes
 {
     public abstract class BaseDatabase
     {
-        protected string SelectedSchema;
+        public string SelectedSchema{ get; protected set; }
 
         public abstract void SelectSchema();
         protected abstract List<string> GetSchemaList();

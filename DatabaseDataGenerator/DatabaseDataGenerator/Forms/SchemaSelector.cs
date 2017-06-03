@@ -29,6 +29,7 @@ namespace DatabaseDataGenerator.Forms
 
         private void barButtonItemOk_ItemClick(object sender, ItemClickEventArgs e)
         {
+            SelectedSchema = comboBoxEditSchema.Text;
             this.DialogResult = DialogResult.OK;
         }
 
