@@ -134,7 +134,7 @@
             this.textEditAddress.MenuManager = this.ribbonControl1;
             this.textEditAddress.Name = "textEditAddress";
             this.textEditAddress.Size = new System.Drawing.Size(255, 20);
-            this.textEditAddress.TabIndex = 2;
+            this.textEditAddress.TabIndex = 1;
             // 
             // labelControl1
             // 
@@ -157,9 +157,11 @@
             this.calcEditPort.Location = new System.Drawing.Point(90, 137);
             this.calcEditPort.MenuManager = this.ribbonControl1;
             this.calcEditPort.Name = "calcEditPort";
+            this.calcEditPort.Properties.Appearance.Options.UseTextOptions = true;
+            this.calcEditPort.Properties.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Near;
             this.calcEditPort.Properties.Mask.EditMask = "f0";
             this.calcEditPort.Size = new System.Drawing.Size(255, 20);
-            this.calcEditPort.TabIndex = 5;
+            this.calcEditPort.TabIndex = 2;
             // 
             // textEditUsername
             // 
@@ -167,7 +169,7 @@
             this.textEditUsername.MenuManager = this.ribbonControl1;
             this.textEditUsername.Name = "textEditUsername";
             this.textEditUsername.Size = new System.Drawing.Size(255, 20);
-            this.textEditUsername.TabIndex = 7;
+            this.textEditUsername.TabIndex = 3;
             // 
             // labelControl3
             // 
@@ -192,7 +194,7 @@
             this.textEditPassword.Name = "textEditPassword";
             this.textEditPassword.Properties.PasswordChar = '*';
             this.textEditPassword.Size = new System.Drawing.Size(255, 20);
-            this.textEditPassword.TabIndex = 6;
+            this.textEditPassword.TabIndex = 4;
             // 
             // labelControl5
             // 
@@ -209,8 +211,12 @@
             this.comboBoxEditType.Name = "comboBoxEditType";
             this.comboBoxEditType.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.comboBoxEditType.Properties.Items.AddRange(new object[] {
+            "",
+            "MySql"});
+            this.comboBoxEditType.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.DisableTextEditor;
             this.comboBoxEditType.Size = new System.Drawing.Size(255, 20);
-            this.comboBoxEditType.TabIndex = 11;
+            this.comboBoxEditType.TabIndex = 0;
             // 
             // DatabaseSelector
             // 

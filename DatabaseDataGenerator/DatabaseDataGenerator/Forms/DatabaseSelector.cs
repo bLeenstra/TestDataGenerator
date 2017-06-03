@@ -34,20 +34,13 @@ namespace DatabaseDataGenerator.Forms
             {
                 case 1:
                     if (!MySqlDatabase.TestConnection(address, port, username, password)) break;
-                    MySqlDatabase database = new MySqlDatabase()
-                    {
-                        ConnString = new MySqlConnectionStringBuilder()
-                        {
-                            Server = address,
-                            Port = port,
-                            UserID = username,
-                            Password = password
-                        }
-                    };
+                    MySqlDatabase database = new MySqlDatabase(address, port, username, password);
+                    database.SelectSchema();
                     using (MySqlDataCreationForm generateData = new MySqlDataCreationForm(database))
                     {
-                        generateData.Show(this);
+                        generateData.ShowDialog(this);
                     }
+                    
 
                     return;
             }

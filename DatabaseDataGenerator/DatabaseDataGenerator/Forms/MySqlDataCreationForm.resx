@@ -117,31 +117,4 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="barButtonItemSchema.ImageOptions.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAZdEVYdFNvZnR3YXJlAEFkb2JlIEltYWdlUmVhZHlxyWU8AAAALXRFWHRUaXRsZQBEQjtTb3Vy
-        Y2U7U3RvcjtkYXRhc291cmNlO0RhdGFiYXNlO0VkaXQo9rqcAAAAzUlEQVQ4T62TsQ3CMBBFMwAFXaag
-        SaTskCILUFAyAB0dYgyUlh0yADUzMIELFjD/X7B1ORknCIonK8n/z8olLrz3grsdyBpswQXcwVPBa97n
-        c+akpwUVuAK/AOYqK+hVYAm9FTgTmMP9XfDzKzTgmyE2VrAHLch9xg4wK1gBZ/AALO/ABqwUJXPdeaiB
-        f1NrQW4GJ1OOEi34NANbjrtz1YLUDI4IpcpRogWpGWTLYPY/oCCEJ2V2sE4EqcMUBFoi5ZSA2OOsBUEi
-        xZGheAE/K775evu0rgAAAABJRU5ErkJggg==
-</value>
-  </data>
-  <data name="barButtonItemSchema.ImageOptions.LargeImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAZdEVYdFNvZnR3YXJlAEFkb2JlIEltYWdlUmVhZHlxyWU8AAAALXRFWHRUaXRsZQBEQjtTb3Vy
-        Y2U7U3RvcjtkYXRhc291cmNlO0RhdGFiYXNlO0VkaXQo9rqcAAABpUlEQVRYR8WVMU7DQBBFU9Aj0XED
-        CgokKKgRlJBrUCKqFCAFjkDHTZBoKNIilI5LQBOkFEgs/yE7cnZmQ7xexcWTnNn5/08cjzMIIfSKW9wk
-        bnGTuMXPyXWTbXEirsSjeBbv4kN8V3BNjTN66EWDduHlZbnFSrAvbsWrCJmgxQMvN8stqnkopsIzzQGv
-        oZdlClAJPKMuTL0sUwA1zyJxCWZelimAmueRuARzL8sUgOZIXIJWA/T+E/T+EPa+hiNxIUq9iPAaeVmm
-        AGrmGXgTd+JU5L6K0eKBV/YafokX8SAuxZnYEztiq4JrapzRQy8atLVP72t442WZAqj5JxJ3ZXx+/zQQ
-        hyJUcJ0coOQGeOGLIVIDlFrDONwMkRqgxBqmvvnS59QAXdfwWOap2w6LO5IaoMsaHsl4VXgN58XXcNUD
-        1+QvHFID5Pwbtg6H1ABtN2CMrjL3QmuWwtGYcJBhmzXMCgd0JhxkCuuuYVY4kGXCAdOKXXEgWMXUGmJW
-        h8TBdd2EA1kmPAeZNcPWCge0xiwHmcWh/4YDWmOWg8yaA6wVDiGEwS9IKlJjkp5nnAAAAABJRU5ErkJg
-        gg==
-</value>
-  </data>
 </root>

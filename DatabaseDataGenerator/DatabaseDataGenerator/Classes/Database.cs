@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -14,5 +15,6 @@ namespace DatabaseDataGenerator.Classes
 
         public abstract void SelectSchema();
         protected abstract List<string> GetSchemaList();
+        protected abstract IDbConnection OpenConnection(IDbConnection conn);
     }
 }

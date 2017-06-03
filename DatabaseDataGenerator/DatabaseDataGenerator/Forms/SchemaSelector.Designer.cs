@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SchemaSelector));
             this.ribbon = new DevExpress.XtraBars.Ribbon.RibbonControl();
             this.barButtonItemOk = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItemCancel = new DevExpress.XtraBars.BarButtonItem();
@@ -64,8 +63,8 @@
             // 
             this.barButtonItemOk.Caption = "Ok";
             this.barButtonItemOk.Id = 1;
-            this.barButtonItemOk.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItemOk.ImageOptions.Image")));
-            this.barButtonItemOk.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItemOk.ImageOptions.LargeImage")));
+            this.barButtonItemOk.ImageOptions.Image = global::DatabaseDataGenerator.Properties.Resources.apply_16x16;
+            this.barButtonItemOk.ImageOptions.LargeImage = global::DatabaseDataGenerator.Properties.Resources.apply_32x32;
             this.barButtonItemOk.Name = "barButtonItemOk";
             this.barButtonItemOk.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButtonItemOk_ItemClick);
             // 
@@ -73,8 +72,8 @@
             // 
             this.barButtonItemCancel.Caption = "Cancel";
             this.barButtonItemCancel.Id = 2;
-            this.barButtonItemCancel.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItemCancel.ImageOptions.Image")));
-            this.barButtonItemCancel.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItemCancel.ImageOptions.LargeImage")));
+            this.barButtonItemCancel.ImageOptions.Image = global::DatabaseDataGenerator.Properties.Resources.cancel_16x16;
+            this.barButtonItemCancel.ImageOptions.LargeImage = global::DatabaseDataGenerator.Properties.Resources.cancel_32x32;
             this.barButtonItemCancel.Name = "barButtonItemCancel";
             this.barButtonItemCancel.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButtonItemCancel_ItemClick);
             // 
@@ -83,7 +82,6 @@
             this.barStaticItem1.Caption = "Select a Schema to use";
             this.barStaticItem1.Id = 3;
             this.barStaticItem1.Name = "barStaticItem1";
-            this.barStaticItem1.TextAlignment = System.Drawing.StringAlignment.Near;
             // 
             // ribbonPage1
             // 
