@@ -107,5 +107,15 @@ namespace DatabaseDataGenerator.Classes
             cmd.Parameters.AddRange(parameters);
             return cmd;
         }
+
+        public void InsertData(string query, MySqlParameter[] parameters)
+        {
+            MySqlConnection conn = CreateConnection();
+            OpenConnection(conn);
+            using (MySqlCommand cmd = CreateCommand(conn, query, parameters))
+            {
+                cmd.ExecuteNonQuery();
+            }
+        }
     }
 }

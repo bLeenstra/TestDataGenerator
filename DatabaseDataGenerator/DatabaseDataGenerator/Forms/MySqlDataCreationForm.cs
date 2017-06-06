@@ -38,11 +38,6 @@ namespace DatabaseDataGenerator.Forms
             LoadData();
         }
 
-        private void CleanValues()
-        {
-            throw new NotImplementedException();
-        }
-
         private void barButtonItemClose_ItemClick(object sender, ItemClickEventArgs e)
         {
             this.DialogResult = DialogResult.Cancel;
@@ -56,7 +51,37 @@ namespace DatabaseDataGenerator.Forms
 
         private void GenerateData()
         {
-            throw new NotImplementedException();
+            gridViewData.PostEditor();
+            DataTable dt = (DataTable)gridControlData.DataSource;
+            if (dt != null)
+            {
+
+                foreach (DataRow dataRow in dt.Rows)
+                {
+                    string tableName = (string)dataRow["TABLE_NAME"];
+                    int rowsToAdd = (int)dataRow["RowsToAdd"];
+
+                    using (MySqlDataReader dataReader = _database.ReadData("SELECT COLUMN_NAME, IS_NULLABLE, DATA_TYPE, CHARACTER_MAXIMUM_LENGTH, COLUMN_KEY, EXTRA FROM INFORMATION_SCHEMA.COLUMNS WHERE TABLE_NAME = @table", new MySqlParameter("@table", tableName)))
+                    {
+                        while (dataReader.Read())
+                        {
+                            var columnname = dataReader.GetString(0);
+                            var nullable = dataReader.GetBoolean(1);
+                            var dataType = dataReader.GetString(2);
+                            var maxDataLength = dataReader.GetInt64(3);
+                            var keyType = dataReader.GetString(4);
+                            var extraInfo = dataReader.GetString(5);
+                        }
+
+
+                        gridControlData.DataSource = dataReader.ToDataTable();
+                    }
+
+
+
+                    //_database.InsertData();
+                }    
+            }
         }
     }
 }

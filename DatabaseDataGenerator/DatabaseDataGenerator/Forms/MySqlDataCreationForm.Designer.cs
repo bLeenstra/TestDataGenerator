@@ -167,9 +167,9 @@
             // 
             // gridColumnRowsToAdd
             // 
-            this.gridColumnRowsToAdd.Caption = "RowsToAdd";
+            this.gridColumnRowsToAdd.Caption = "Rows To Add";
             this.gridColumnRowsToAdd.ColumnEdit = this.repositoryItemEditableRowCount;
-            this.gridColumnRowsToAdd.FieldName = "Rows To Add";
+            this.gridColumnRowsToAdd.FieldName = "RowsToAdd";
             this.gridColumnRowsToAdd.Name = "gridColumnRowsToAdd";
             this.gridColumnRowsToAdd.Visible = true;
             this.gridColumnRowsToAdd.VisibleIndex = 2;
