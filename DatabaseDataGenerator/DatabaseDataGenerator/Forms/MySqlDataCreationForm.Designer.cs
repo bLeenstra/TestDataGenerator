@@ -182,7 +182,6 @@
             this.repositoryItemEditableRowCount.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.repositoryItemEditableRowCount.Mask.EditMask = "f0";
-            this.repositoryItemEditableRowCount.Mask.UseMaskAsDisplayFormat = true;
             this.repositoryItemEditableRowCount.Name = "repositoryItemEditableRowCount";
             // 
             // MySqlDataCreationForm

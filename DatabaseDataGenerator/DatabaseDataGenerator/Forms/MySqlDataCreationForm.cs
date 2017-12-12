@@ -27,7 +27,7 @@ namespace DatabaseDataGenerator.Forms
 
         private void LoadData()
         {
-            using (MySqlDataReader dataReader = _database.ReadData("SELECT * FROM INFORMATION_SCHEMA.TABLES where TABLE_SCHEMA = @schema", new MySqlParameter("@schema", _database.SelectedSchema)))
+            using (MySqlDataReader dataReader = _database.ReadData("SELECT TABLE_NAME, TABLE_ROWS, 0 `RowsToAdd` FROM INFORMATION_SCHEMA.TABLES where TABLE_SCHEMA = @schema", new MySqlParameter("@schema", _database.SelectedSchema)))
             {
                 gridControlData.DataSource = dataReader.ToDataTable();
             }
